@@ -1,0 +1,93 @@
+import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
+export default function Footer() {
+  return (
+    <footer className="bg-[hsl(var(--blue-dark))] text-white py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-6">Royal Phoenicia</h3>
+            <p className="mb-6 opacity-80">
+              Experience unparalleled luxury and comfort at our prestigious hotel, where every detail is crafted to exceed your expectations.
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="text-[hsl(var(--gold))] hover:text-white transition-all">
+                <Facebook size={18} />
+              </a>
+              <a href="#" className="text-[hsl(var(--gold))] hover:text-white transition-all">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="text-[hsl(var(--gold))] hover:text-white transition-all">
+                <Twitter size={18} />
+              </a>
+              <a href="#" className="text-[hsl(var(--gold))] hover:text-white transition-all">
+                <Linkedin size={18} />
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-6">Quick Links</h3>
+            <ul className="space-y-3">
+              <li><a href="#rooms" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Rooms & Suites</a></li>
+              <li><a href="#amenities" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Amenities</a></li>
+              <li><a href="#dining" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Dining</a></li>
+              <li><a href="#gallery" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Gallery</a></li>
+              <li><a href="#contact" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Contact</a></li>
+              <li><a href="#booking" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Reservations</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-6">Contact Us</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <MapPin className="text-[hsl(var(--gold))] mr-3 mt-1" size={18} />
+                <span className="opacity-80">123 Luxury Avenue<br />City Center, 10001</span>
+              </li>
+              <li className="flex items-start">
+                <Phone className="text-[hsl(var(--gold))] mr-3 mt-1" size={18} />
+                <span className="opacity-80">+1 (800) 123-4567</span>
+              </li>
+              <li className="flex items-start">
+                <Mail className="text-[hsl(var(--gold))] mr-3 mt-1" size={18} />
+                <span className="opacity-80">info@royalphoenicia.com</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-6">Newsletter</h3>
+            <p className="mb-4 opacity-80">Subscribe to our newsletter for exclusive offers and updates.</p>
+            <form className="space-y-3">
+              <Input 
+                type="email" 
+                placeholder="Your Email Address" 
+                className="w-full p-3 bg-[hsl(var(--blue-light))] border border-[hsl(var(--blue))] text-white placeholder-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-[hsl(var(--gold))]"
+              />
+              <Button 
+                type="submit" 
+                className="w-full px-4 py-2 bg-[hsl(var(--gold))] text-white rounded hover:bg-[hsl(var(--gold-dark))] transition-all"
+              >
+                Subscribe
+              </Button>
+            </form>
+          </div>
+        </div>
+        
+        <div className="border-t border-[hsl(var(--blue-light))] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="opacity-80 text-sm text-center md:text-left mb-4 md:mb-0">
+            &copy; 2023 Royal Phoenicia Hotel. All Rights Reserved.
+          </p>
+          <div className="flex gap-4 text-sm">
+            <a href="#" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Privacy Policy</a>
+            <a href="#" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Terms of Service</a>
+            <a href="#" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
