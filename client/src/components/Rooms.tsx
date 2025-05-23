@@ -25,12 +25,17 @@ export default function Rooms() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {roomData.map((room, index) => (
-            <div key={index} className="room-card overflow-hidden rounded-xl bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-60 shadow-2xl">
+            <div key={index} className="room-card overflow-hidden rounded-xl shadow-2xl" style={{animationDelay: `${index * 0.2}s`}}>
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={room.image} 
                   alt={room.name} 
-                  className="w-full h-full object-cover transition-all duration-500 hover:scale-110"
+                  className="w-full h-full object-cover luxury-image"
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80';
+                  }}
                 />
                 <div className="absolute bottom-0 right-0 bg-gradient-to-r from-[hsl(var(--gold))] to-[hsl(var(--gold-light))] text-[hsl(var(--deep-black))] py-2 px-4 rounded-tl-lg font-semibold">
                   From ${room.price}/night

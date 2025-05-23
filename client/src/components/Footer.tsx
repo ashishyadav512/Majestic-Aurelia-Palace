@@ -4,8 +4,15 @@ import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
-    <footer className="bg-[hsl(var(--blue-dark))] text-white py-16">
-      <div className="container mx-auto px-4">
+    <footer className="bg-[hsl(var(--deep-black))] text-white py-16 relative overflow-hidden border-t border-[hsl(var(--gold))] border-opacity-30">
+      {/* Luxury footer background elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 right-20 w-8 h-8 border border-[hsl(var(--gold))] rotate-45" style={{animation: 'diamondSparkle 12s ease-in-out infinite'}}></div>
+        <div className="absolute bottom-20 left-10 w-6 h-6 bg-[hsl(var(--gold))] rotate-45" style={{animation: 'diamondSparkle 8s ease-in-out infinite'}}></div>
+        <div className="absolute top-1/2 left-1/3 w-4 h-4 border border-[hsl(var(--gold-light))] rotate-45" style={{animation: 'diamondSparkle 10s ease-in-out infinite'}}></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-playfair text-xl font-semibold mb-6">Royal Phoenicia</h3>

@@ -3,12 +3,22 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section id="home" className="hero-slider relative">
-      {/* Hero background with overlay */}
+      {/* Luxury diamond background pattern */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-20 w-3 h-3 bg-[hsl(var(--gold))] rounded-full animate-pulse" style={{clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)'}}></div>
+        <div className="absolute top-40 right-32 w-2 h-2 bg-[hsl(var(--gold-light))] rounded-full" style={{animation: 'diamondSparkle 4s ease-in-out infinite'}}></div>
+        <div className="absolute bottom-40 left-40 w-4 h-4 bg-[hsl(var(--gold))]" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', animation: 'diamondSparkle 6s ease-in-out infinite'}}></div>
+        <div className="absolute top-60 left-1/3 w-2 h-2 bg-[hsl(var(--gold-light))] rounded-full" style={{animation: 'diamondSparkle 3s ease-in-out infinite'}}></div>
+        <div className="absolute bottom-60 right-20 w-3 h-3 bg-[hsl(var(--gold))]" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', animation: 'diamondSparkle 5s ease-in-out infinite'}}></div>
+      </div>
+
+      {/* Hero background with luxury overlay */}
       <div 
-        className="slide absolute inset-0 bg-cover bg-center" 
+        className="slide absolute inset-0 bg-cover bg-center luxury-image" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80')" }}
       >
-        <div className="absolute inset-0 bg-[hsl(var(--deep-black))] bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--deep-black))] via-transparent to-[hsl(var(--deep-black))] opacity-85"></div>
+        <div className="absolute inset-0 bg-[hsl(var(--deep-black))] bg-opacity-50"></div>
       </div>
       
       <div className="container mx-auto px-4 h-full flex items-center relative z-10">
