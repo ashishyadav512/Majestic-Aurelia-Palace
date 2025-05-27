@@ -1,26 +1,16 @@
-import { 
-  Droplets, 
-  Bath, 
-  Dumbbell, 
-  Utensils, 
-  Bell, 
-  Wifi, 
-  Car, 
-  GlassWater
-} from "lucide-react";
 import { amenitiesData } from "@/lib/data";
 
 export default function Amenities() {
-  // Map of icons to components
-  const iconMap: Record<string, React.ReactNode> = {
-    pool: <Droplets className="text-2xl text-white" />,
-    spa: <Bath className="text-2xl text-white" />,
-    fitness: <Dumbbell className="text-2xl text-white" />,
-    dining: <Utensils className="text-2xl text-white" />,
-    concierge: <Bell className="text-2xl text-white" />,
-    wifi: <Wifi className="text-2xl text-white" />,
-    valet: <Car className="text-2xl text-white" />,
-    lounge: <GlassWater className="text-2xl text-white" />
+  // Map of beautiful high-quality images for each amenity
+  const imageMap: Record<string, string> = {
+    pool: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    spa: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    fitness: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    dining: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    concierge: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    wifi: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    valet: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    lounge: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80"
   };
 
   return (
@@ -53,8 +43,17 @@ export default function Amenities() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {amenitiesData.map((amenity, index) => (
             <div key={index} className="amenity text-center p-6 rounded-xl bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-60 transition-all duration-500 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/30">
-              <div className="amenity-icon w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[hsl(var(--gold))] to-[hsl(var(--gold-light))] flex items-center justify-center">
-                {iconMap[amenity.icon]}
+              <div className="amenity-icon w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-30">
+                <img 
+                  src={imageMap[amenity.icon]} 
+                  alt={amenity.name}
+                  className="w-full h-full object-cover luxury-image"
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80';
+                  }}
+                />
               </div>
               <h3 className="font-playfair text-xl font-semibold mb-2 text-[hsl(var(--gold))]">{amenity.name}</h3>
               <p className="text-sm text-[hsl(var(--neutral-lightest))] opacity-90">{amenity.description}</p>

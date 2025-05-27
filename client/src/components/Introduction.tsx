@@ -1,6 +1,10 @@
-import { ConciergeBell, MapPin, Utensils } from "lucide-react";
-
 export default function Introduction() {
+  // Beautiful high-quality images for each service
+  const serviceImages = {
+    service: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    location: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80",
+    dining: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80"
+  };
   return (
     <section className="py-28 md:py-32 bg-[hsl(var(--deep-black))] relative overflow-hidden">
       {/* Floating particles background */}
@@ -27,8 +31,13 @@ export default function Introduction() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center p-8 bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] hover:from-[hsl(var(--blue))] hover:to-[hsl(var(--blue-dark))] transition-all duration-500 rounded-xl border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-50 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/20 hover:transform hover:scale-105 fade-in-up">
-            <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-[hsl(var(--gold))] bg-opacity-20 rounded-full">
-              <ConciergeBell className="text-[hsl(var(--gold))] transition-all duration-300 hover:scale-110" size={48} />
+            <div className="w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40">
+              <img 
+                src={serviceImages.service}
+                alt="Exceptional Service"
+                className="w-full h-full object-cover luxury-image"
+                loading="lazy"
+              />
             </div>
             <h3 className="font-playfair text-xl font-semibold text-[hsl(var(--gold))] mb-3">Exceptional Service</h3>
             <p className="text-[hsl(var(--neutral-lightest))]">
@@ -37,8 +46,13 @@ export default function Introduction() {
           </div>
           
           <div className="text-center p-8 bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] hover:from-[hsl(var(--blue))] hover:to-[hsl(var(--blue-dark))] transition-all duration-500 rounded-xl border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-50 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/20 hover:transform hover:scale-105 fade-in-up" style={{animationDelay: '0.2s'}}>
-            <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-[hsl(var(--gold))] bg-opacity-20 rounded-full">
-              <MapPin className="text-[hsl(var(--gold))] transition-all duration-300 hover:scale-110" size={48} />
+            <div className="w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40">
+              <img 
+                src={serviceImages.location}
+                alt="Prime Location"
+                className="w-full h-full object-cover luxury-image"
+                loading="lazy"
+              />
             </div>
             <h3 className="font-playfair text-xl font-semibold text-[hsl(var(--gold))] mb-3">Prime Location</h3>
             <p className="text-[hsl(var(--neutral-lightest))]">
@@ -47,8 +61,13 @@ export default function Introduction() {
           </div>
           
           <div className="text-center p-8 bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] hover:from-[hsl(var(--blue))] hover:to-[hsl(var(--blue-dark))] transition-all duration-500 rounded-xl border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-50 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/20 hover:transform hover:scale-105 fade-in-up" style={{animationDelay: '0.4s'}}>
-            <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-[hsl(var(--gold))] bg-opacity-20 rounded-full">
-              <Utensils className="text-[hsl(var(--gold))] transition-all duration-300 hover:scale-110" size={48} />
+            <div className="w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40">
+              <img 
+                src={serviceImages.dining}
+                alt="Exquisite Dining"
+                className="w-full h-full object-cover luxury-image"
+                loading="lazy"
+              />
             </div>
             <h3 className="font-playfair text-xl font-semibold text-[hsl(var(--gold))] mb-3">Exquisite Dining</h3>
             <p className="text-[hsl(var(--neutral-lightest))]">
