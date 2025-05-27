@@ -21,10 +21,10 @@ export default function Header() {
           <a href="#" className="text-2xl font-playfair font-bold text-[hsl(var(--gold))] flex items-center hover:text-[hsl(var(--gold-light))] transition-all duration-300">
             <img 
               src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80" 
-              alt="Royal Phoenicia Logo" 
+              alt="Majestic Aurelia Palace Logo" 
               className="w-10 h-10 mr-2 rounded-full object-cover"
             />
-            <span>Royal Phoenicia</span>
+            <span>Majestic Aurelia Palace</span>
           </a>
         </div>
         

@@ -27,7 +27,7 @@ export default function Hero() {
             Experience Luxury & Comfort
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl text-[hsl(var(--neutral-lightest))] slide-in-left">
-            Indulge in the ultimate luxury experience at Royal Phoenicia Hotel, where timeless elegance meets modern comfort.
+            Indulge in the ultimate luxury experience at Majestic Aurelia Palace, where timeless elegance meets modern comfort.
           </p>
           <div className="flex flex-wrap gap-4 slide-in-right">
             <Button 

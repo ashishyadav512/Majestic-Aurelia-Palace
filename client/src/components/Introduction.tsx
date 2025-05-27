@@ -13,15 +13,15 @@ export default function Introduction() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 fade-in-up">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[hsl(var(--gold))] mb-4">
-            Welcome to Royal Phoenicia
+            Welcome to Majestic Aurelia Palace
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[hsl(var(--gold))] to-[hsl(var(--gold-light))] mx-auto mb-6 rounded-full"></div>
           <p className="text-[hsl(var(--neutral-lightest))] mb-6">
-            Nestled in the heart of luxury, Royal Phoenicia Hotel offers an unparalleled blend of opulence, comfort, and exceptional service. 
+            Nestled in the heart of luxury, Majestic Aurelia Palace offers an unparalleled blend of opulence, comfort, and exceptional service. 
             Our commitment to excellence ensures that every moment of your stay is nothing short of extraordinary.
           </p>
           <p className="text-[hsl(var(--neutral))]">
-            From our elegantly appointed rooms to our world-class amenities, we invite you to experience the pinnacle of hospitality.
+            From our elegantly appointed suites to our world-class amenities, we invite you to experience the pinnacle of sophisticated hospitality.
           </p>
         </div>
         

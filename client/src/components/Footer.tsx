@@ -15,9 +15,9 @@ export default function Footer() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-playfair text-xl font-semibold mb-6">Royal Phoenicia</h3>
+            <h3 className="font-playfair text-xl font-semibold mb-6 text-[hsl(var(--gold))]">Majestic Aurelia Palace</h3>
             <p className="mb-6 opacity-80">
-              Experience unparalleled luxury and comfort at our prestigious hotel, where every detail is crafted to exceed your expectations.
+              Experience unparalleled luxury and comfort at our prestigious palace, where every detail is crafted to exceed your expectations.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-[hsl(var(--gold))] hover:text-white transition-all">
@@ -86,7 +86,7 @@ export default function Footer() {
         
         <div className="border-t border-[hsl(var(--blue-light))] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="opacity-80 text-sm text-center md:text-left mb-4 md:mb-0">
-            &copy; 2023 Royal Phoenicia Hotel. All Rights Reserved.
+            &copy; 2024 Majestic Aurelia Palace. All Rights Reserved.
           </p>
           <div className="flex gap-4 text-sm">
             <a href="#" className="opacity-80 hover:text-[hsl(var(--gold))] transition-all">Privacy Policy</a>
