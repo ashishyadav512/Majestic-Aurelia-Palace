@@ -31,7 +31,7 @@ export default function Introduction() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center p-8 bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] hover:from-[hsl(var(--blue))] hover:to-[hsl(var(--blue-dark))] transition-all duration-500 rounded-xl border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-50 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/20 hover:transform hover:scale-105 fade-in-up">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40">
+            <div className="w-full h-48 mx-auto mb-6 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40 shadow-lg">
               <img 
                 src={serviceImages.service}
                 alt="Exceptional Service"
@@ -46,7 +46,7 @@ export default function Introduction() {
           </div>
           
           <div className="text-center p-8 bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] hover:from-[hsl(var(--blue))] hover:to-[hsl(var(--blue-dark))] transition-all duration-500 rounded-xl border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-50 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/20 hover:transform hover:scale-105 fade-in-up" style={{animationDelay: '0.2s'}}>
-            <div className="w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40">
+            <div className="w-full h-48 mx-auto mb-6 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40 shadow-lg">
               <img 
                 src={serviceImages.location}
                 alt="Prime Location"
@@ -61,7 +61,7 @@ export default function Introduction() {
           </div>
           
           <div className="text-center p-8 bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] hover:from-[hsl(var(--blue))] hover:to-[hsl(var(--blue-dark))] transition-all duration-500 rounded-xl border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-50 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/20 hover:transform hover:scale-105 fade-in-up" style={{animationDelay: '0.4s'}}>
-            <div className="w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40">
+            <div className="w-full h-48 mx-auto mb-6 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40 shadow-lg">
               <img 
                 src={serviceImages.dining}
                 alt="Exquisite Dining"

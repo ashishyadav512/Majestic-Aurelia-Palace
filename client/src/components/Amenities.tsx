@@ -43,7 +43,7 @@ export default function Amenities() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {amenitiesData.map((amenity, index) => (
             <div key={index} className="amenity text-center p-6 rounded-xl bg-gradient-to-br from-[hsl(var(--blue-dark))] to-[hsl(var(--deep-black))] border border-[hsl(var(--gold))] border-opacity-20 hover:border-opacity-60 transition-all duration-500 hover:shadow-2xl hover:shadow-[hsl(var(--gold))]/30">
-              <div className="amenity-icon w-24 h-24 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-30">
+              <div className="amenity-icon w-full h-48 mx-auto mb-6 rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))] border-opacity-40 shadow-lg">
                 <img 
                   src={imageMap[amenity.icon]} 
                   alt={amenity.name}
